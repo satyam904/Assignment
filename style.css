@@ -1,0 +1,272 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+  background: #000;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  padding: 15px 10%;
+  background: #ee7b79;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 90px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif; 
+  font-weight: 700; 
+  color: #111;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+
+.menu-toggle {
+  display: block; 
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 28px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  height: 92vh;
+  background: linear-gradient(to right, #fff6a9, #fcb1d6);
+}
+
+.hero-left {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero-left p {
+  font-size: large;
+  margin-bottom: 25px;
+  max-width: 800px;
+}
+
+.btn-primary {
+  background: #ef7f7f;
+  color: #fff;
+  padding: 6px 14px; 
+  border: none;
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+
+
+.hero-right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ABOUT */
+.about {
+  margin-top: 10px;
+  height: auto;
+  padding: 60px 10%;
+  background: linear-gradient(to right, #fff6a9, #fcb1d6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-images {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-images img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tall-image img {
+  width: 300px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ABOUT TEXT BOX */
+.about-text {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  background: #ee7b79;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-text p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.about-text h2 {
+  font-size: 2.9rem;
+  font-weight: 6600;
+  color: #111;
+}
+
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #111;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.arrow-link:hover {
+  transform: translateX(5px);
+}
+
+.arrow-link img {
+  width: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+  .about-images {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  /* Navbar adjustments for mobile */
+  .navbar {
+    justify-content: space-between;
+    padding: 15px 5%;
+  }
+  
+  .menu-toggle {
+    display: block; /* Show the menu toggle on small screens */
+  }
+  
+  .nav-links {
+    display: none; /* Hide regular nav links on small screens */
+    flex-direction: column;
+    background: #ee7b79;
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    width: 90%;
+    border-radius: 8px;
+    padding: 15px;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  /* Hero section mobile adjustments */
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-left {
+    padding: 40px 20px;
+    text-align: center;
+    order: 2;
+  }
+  .hero-right {
+    height: 300px;
+    order: 1;
+  }
+  
+  /* About section mobile adjustments */
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+  }
+  .about-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .small-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .small-images img,
+  .tall-image img {
+    width: 280px;
+    height: 250px;
+  }
+  .about-text {
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}

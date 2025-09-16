@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a>Home</a></li>
+          <li><a>Order</a></li>
+          <li><a>Food</a></li>
+          <li><a>Restaurant</a></li>
+          <li><a>Testimonials</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <img src="assets/menu-bar.png" alt="menu" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-left">
+          <h1>LOREM IPSUM</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+            est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+            euismod lorem in, sollicitudin viverra eros. Donec dictum luctus
+            quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem
+            nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac
+            porta viverra.
+          </p>
+          <button class="btn-primary">Click Me</button>
+        </div>
+        <div class="hero-right">
+          <img
+            src="assets/pexels-robin-stickel-70497.jpg"
+            alt="Hero food image"
+          />
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="about-images">
+          <div class="small-images">
+            <img src="assets/pexels-rachel-claire-6752433.jpg" alt="Food 1" />
+            <img src="assets/pexels-eva-bronzini-6141651.jpg" alt="Food 2" />
+          </div>
+          <div class="tall-image">
+            <img
+              src="assets/pexels-mister-mister-3434523.jpg"
+              alt="Tall Food"
+            />
+          </div>
+        </div>
+        <div class="about-text">
+          <p>LOREM IPSUM</p>
+          <h2>LOREM IPSUM<br />SET ADEMIR</h2>
+          <a href="#" class="arrow-link">
+            Click <img src="assets/icons8-arrow-30.png" alt="arrow" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    </script>
+  </body>
+</html>
