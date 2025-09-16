@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +35,6 @@ body {
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
-
 
 .menu-toggle {
   display: block; 
@@ -86,8 +84,6 @@ body {
   font-size: 1.1rem;
   cursor: pointer;
 }
-
-
 
 .hero-right {
   flex: 1;
@@ -142,7 +138,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ABOUT TEXT BOX */
 .about-text {
   flex: 1;
   max-width: 500px;
@@ -206,11 +201,11 @@ body {
   }
   
   .menu-toggle {
-    display: block; /* Show the menu toggle on small screens */
+    display: block; 
   }
   
   .nav-links {
-    display: none; /* Hide regular nav links on small screens */
+    display: none; 
     flex-direction: column;
     background: #ee7b79;
     position: absolute;
