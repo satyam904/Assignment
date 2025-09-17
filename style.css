@@ -83,6 +83,7 @@ body {
   font-weight: 900;
   font-size: 1.1rem;
   cursor: pointer;
+  width: 150px;
 }
 
 .hero-right {
@@ -100,7 +101,7 @@ body {
 /* ABOUT */
 .about {
   margin-top: 10px;
-  height: auto;
+  height: 100vh;
   padding: 60px 10%;
   background: linear-gradient(to right, #fff6a9, #fcb1d6);
   display: flex;
@@ -159,7 +160,7 @@ body {
 
 .about-text h2 {
   font-size: 2.9rem;
-  font-weight: 6600;
+  font-weight: 600;
   color: #111;
 }
 
@@ -230,12 +231,18 @@ body {
   }
   .hero-left {
     padding: 40px 20px;
-    text-align: center;
+    text-align: left;
     order: 2;
   }
   .hero-right {
     height: 300px;
     order: 1;
+  }
+
+  .btn-primary {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
   }
   
   /* About section mobile adjustments */
@@ -243,6 +250,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 40px 5%;
+    height: auto;
   }
   .about-images {
     flex-direction: column;
